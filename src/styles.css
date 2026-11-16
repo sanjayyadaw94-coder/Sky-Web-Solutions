@@ -542,3 +542,37 @@ footer {
     scroll-behavior: auto !important;
   }
 }
+
+
+/* Contact consent: keep checkbox and entire sentence together on narrow screens. */
+.form label.privacy-consent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+  width: 100%;
+  min-width: 0;
+  font-size: 13px;
+  line-height: 1.55;
+  font-weight: 500;
+}
+.form label.privacy-consent input[type="checkbox"] {
+  box-sizing: border-box;
+  appearance: auto;
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  flex: 0 0 18px;
+  padding: 0;
+  margin: 2px 0 0;
+  cursor: pointer;
+  accent-color: #e76543;
+}
+.form .privacy-consent .consent-copy {
+  display: block;
+  flex: 1 1 auto;
+  min-width: 0;
+  width: auto;
+  overflow-wrap: break-word;
+}
+.form .privacy-consent .consent-copy a { display: inline; }
